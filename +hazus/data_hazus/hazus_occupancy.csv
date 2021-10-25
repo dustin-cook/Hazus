@@ -1,0 +1,29 @@
+id,occupancy,label,occupancy_class
+1,Single Family Dwelling,RES1,residential
+2,Mobile Home,RES2,residential
+3,Multi Family Dwelling,RES3,residential
+4,Temporary Lodging,RES4,residential
+5,Institutional Dormitory,RES5,residential
+6,Nursing Home,RES6,residential
+7,Retail Trade,COM1,commercial
+8,Wholesale Trade,COM2,commercial
+9,Personal and Repair Services,COM3,commercial
+10,Professional/Technical/ Business  Services,COM4,commercial
+11,Banks/Financial Institutions,COM5,commercial
+12,Hospital,COM6,commercial
+13,Medical Office/Clinic,COM7,commercial
+14,Entertainment & Recreation,COM8,commercial
+15,Theaters,COM9,commercial
+16,Parking,COM10,commercial
+17,Heavy,IND1,industrial
+18,Light,IND2,industrial
+19,Food/Drugs/Chemicals,IND3,industrial
+20,Metals/Minerals Processing,IND4,industrial
+21,High Technology,IND5,industrial
+22,Construction,IND6,industrial
+23,Agriculture,AGR1,agriculture
+24,Church/Membership/Organization,REL1,religious
+25,General Services,GOV1,government
+26,Emergency Response,GOV2,government
+27,Schools/Libraries,EDU1,education
+28,Colleges/Universities,EDU2,education

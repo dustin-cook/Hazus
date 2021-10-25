@@ -1,0 +1,37 @@
+id,build_type,hazus_class,description,material,system,min_num_stories,height_class,ht_to_roof_ft,period,yield_overstrength_gamma,ult_overstrength_gamma,newmark_yield_damping_low,newmark_yield_damping_high,aebm_yield_damping_low,aebm_yield_damping_high
+1,W1,W1,"Wood, Light Frame (<=5,000 sq. ft.)",W,LF,0,L,14,0.35,1.5,3,15,20,10,15
+2,W2,W2,"Wood, Commercial and Industrial (>5,000 sq. ft.)",W,COM-IND,0,L,24,0.4,1.5,2.5,15,20,10,15
+3,S1L,S1,Steel Moment Frame,S,MRF,0,L,24,0.5,1.5,3,5,7,5,7
+4,S1M,S1,Steel Moment Frame,S,MRF,4,M,60,1.08,1.25,3,5,7,5,7
+5,S1H,S1,Steel Moment Frame,S,MRF,8,H,156,2.21,1.1,3,5,7,5,7
+6,S2L,S2,Steel Braced Frame,S,BR,0,L,24,0.4,1.5,2,5,7,5,7
+7,S2M,S2,Steel Braced Frame,S,BR,4,M,60,0.86,1.25,2,5,7,5,7
+8,S2H,S2,Steel Braced Frame,S,BR,8,H,156,1.77,1.1,2,5,7,5,7
+9,S3,S3,Steel Light Frame,S,LM,0,L,15,0.4,1.5,2,10,15,5,7
+10,S4L,S4,Steel Frame with Cast-in-Place Concrete Shear Walls,S,RC-SW,0,L,24,0.35,1.5,2.25,5,7,5,7
+11,S4M,S4,Steel Frame with Cast-in-Place Concrete Shear Walls,S,RC-SW,4,M,60,0.65,1.25,2.25,5,7,5,7
+12,S4H,S4,Steel Frame with Cast-in-Place Concrete Shear Walls,S,RC-SW,8,H,156,1.32,1.1,2.25,5,7,5,7
+13,S5L,S5,Steel Frame with Unreinforced Masonry Infill Walls,S,URM-INF,0,L,24,0.35,1.5,2,5,7,10,10
+14,S5M,S5,Steel Frame with Unreinforced Masonry Infill Walls,S,URM-INF,4,M,60,0.65,1.25,2,5,7,10,10
+15,S5H,S5,Steel Frame with Unreinforced Masonry Infill Walls,S,URM-INF,8,H,156,1.32,1.1,2,5,7,10,10
+16,C1L,C1,Concrete Moment Frame,C,MRF,0,L,20,0.4,1.5,3,7,10,7,7
+17,C1M,C1,Concrete Moment Frame,C,MRF,4,M,50,0.75,1.25,3,7,10,7,7
+18,C1H,C1,Concrete Moment Frame,C,MRF,8,H,120,1.45,1.1,3,7,10,7,7
+19,C2L,C2,Concrete Shear Walls,C,SW,0,L,20,0.35,1.5,2.5,7,10,7,7
+20,C2M,C2,Concrete Shear Walls,C,SW,4,M,50,0.56,1.25,2.5,7,10,7,7
+21,C2H,C2,Concrete Shear Walls,C,SW,8,H,120,1.09,1.1,2.5,7,10,7,7
+22,C3L,C3,Concrete Frame with Unreinforced Masonry Infill Walls,C,URM-INF,0,L,20,0.35,1.5,2.25,7,10,10,10
+23,C3M,C3,Concrete Frame with Unreinforced Masonry Infill Walls,C,URM-INF,4,M,50,0.56,1.25,2.25,7,10,10,10
+24,C3H,C3,Concrete Frame with Unreinforced Masonry Infill Walls,C,URM-INF,8,H,120,1.09,1.1,2.25,7,10,10,10
+25,PC1,PC1,Precast Concrete Tilt-Up Walls,PC,TU,0,L,15,0.35,1.5,2,7,10,7,7
+26,PC2L,PC2,Precast Concrete Frames with Concrete Shear Walls,PC,SW,0,L,20,0.35,1.5,2,7,10,7,7
+27,PC2M,PC2,Precast Concrete Frames with Concrete Shear Walls,PC,SW,4,M,50,0.56,1.25,2,7,10,7,7
+28,PC2H,PC2,Precast Concrete Frames with Concrete Shear Walls,PC,SW,8,H,120,1.09,1.1,2,7,10,7,7
+29,RM1L,RM1,Reinforced Masonry Bearing Walls with Wood or Metal Deck Diaphragms,RM,FD,0,L,20,0.35,1.5,2,5,5,7,10
+30,RM1M,RM1,Reinforced Masonry Bearing Walls with Wood or Metal Deck Diaphragms,RM,FD,4,M,50,0.56,1.25,2,5,5,7,10
+31,RM2L,RM2,Reinforced Masonry Bearing Walls with Precast Concrete Diaphragms,RM,RD,0,L,20,0.35,1.5,2,5,5,7,10
+32,RM2M,RM2,Reinforced Masonry Bearing Walls with Precast Concrete Diaphragms,RM,RD,4,M,50,0.56,1.25,2,5,5,7,10
+33,RM2H,RM2,Reinforced Masonry Bearing Walls with Precast Concrete Diaphragms,RM,RD,8,H,120,1.09,1.1,2,5,5,7,10
+34,URML,URM,Unreinforced Masonry Bearing Walls,URM,*,0,L,15,0.35,1.5,2,5,5,10,10
+35,URMM,URM,Unreinforced Masonry Bearing Walls,URM,*,4,M,35,0.5,1.25,2,5,5,10,10
+36,MH,MH,Mobile Homes,MH,*,0,L,10,0.35,1.5,2,5,5,5,5
