@@ -1,4 +1,4 @@
-function [ pga ] = fn_read_shakemap_data( lat, lng, shakemap_name )
+function [ pga_g ] = fn_read_shakemap_data( lat, lng, shakemap_name )
 %UNTITLED2 Summary of this function goes here
 %   Detailed explanation goes here
 
@@ -52,5 +52,8 @@ else
     % Outside of bounds, set shaking to zero
     pga = 0;
 end
+
+% Convert from percent g to g
+pga_g = pga / 100;
 end
 
