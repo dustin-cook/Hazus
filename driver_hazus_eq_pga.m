@@ -19,7 +19,7 @@ for m = 1:height(models)
     [ models.code_level{m} ] = fn_hazus_code_level( num2str(models.hazus_zone(m)), building_type, models.year_of_construction(m) );
 
     %% Run Hazus
-    [ models.loss(m) ] = main_hazus_eq_pga( building_type.build_type, models.occupancy{m}, models.code_level(m), models.pga(m) );
+    [ models.recovery_time_days(m) ] = main_hazus_railway( building_type.build_type, models.lifeline_type{m}, models.code_level(m), models.pga(m) );
 end
 
 %% Save output data

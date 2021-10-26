@@ -1,4 +1,4 @@
-function [ loss ] = fn_calc_hazus_loss( damage_curves, hazus_cost_ds, spectral_value, type )
+function [ loss ] = fn_calc_hazus_loss( damage_curves, consequence_data, shaking_intensity, target )
 %UNTITLED3 Summary of this function goes here
 %   Detailed explanation goes here
 
@@ -8,19 +8,20 @@ ds_medians = [damage_curves.median_slight, damage_curves.median_moderate, damage
 ds_betas = [damage_curves.beta_slight, damage_curves.beta_moderate, damage_curves.beta_extensive, damage_curves.beta_complete];
 
 % damage state exceedance probabilities per pgaVals 
-prob_ds_exceed = [normcdf( log(spectral_value./ds_medians)./ds_betas),0]; % pad with zeros for probability of exceeding DS 5, to help with differentiation in the next step
+prob_ds_exceed = normcdf( log(shaking_intensity./ds_medians)./ds_betas);
 
 % damage state probabilities
-for j = 1:4
-    prob_ds(:,j) = prob_ds_exceed(:,j) - prob_ds_exceed(:,j+1);
-end
+prob_ds = prob_ds_exceed - [prob_ds_exceed(2:end),0];
 
 %% Compute Loss
 % Find loss ratios for the given occupancy type
-loss_values = [hazus_cost_ds.([type '_slight']), hazus_cost_ds.([type '_moderate']), hazus_cost_ds.([type '_extensive']), hazus_cost_ds.([type '_complete'])];
+loss_values = [consequence_data.(target)(strcmp(consequence_data.damage_state,'slight')),...
+               consequence_data.(target)(strcmp(consequence_data.damage_state,'moderate')),...
+               consequence_data.(target)(strcmp(consequence_data.damage_state,'extensive')),...
+               consequence_data.(target)(strcmp(consequence_data.damage_state,'complete'))];
 
 % compute loss ratios per PGA
-loss = (sum(prob_ds .* loss_values)/100)';
+loss = sum(prob_ds .* loss_values);
 
 end
 
