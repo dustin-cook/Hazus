@@ -1,4 +1,4 @@
-function [ loss ] = main_hazus_railway( build_type, lifeline_type, code_level, pga )
+function [ loss ] = main_hazus_rail_station( build_type, lifeline_type, code_level, pga )
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
 

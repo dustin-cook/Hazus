@@ -1,0 +1,133 @@
+id,lifeline_class,classification,damage_state,hazard_intensity,median,beta
+1,RTR1,NA,slight,pgd,12,0.7
+2,RTR1,NA,moderate,pgd,24,0.7
+3,RTR1,NA,extensive,pgd,60,0.7
+4,RTR1,NA,complete,pgd,60,0.7
+5,RLB1,HWB12,slight,psa_1,0.25,0.6
+6,RLB1,HWB12,moderate,psa_1,0.35,0.6
+7,RLB1,HWB12,extensive,psa_1,0.45,0.6
+8,RLB1,HWB12,complete,psa_1,0.7,0.6
+9,RLB2,HWB13,slight,psa_1,0.3,0.6
+10,RLB2,HWB13,moderate,psa_1,0.5,0.6
+11,RLB2,HWB13,extensive,psa_1,0.6,0.6
+12,RLB2,HWB13,complete,psa_1,0.9,0.6
+13,RLB3,HWB14,slight,psa_1,0.5,0.6
+14,RLB3,HWB14,moderate,psa_1,0.8,0.6
+15,RLB3,HWB14,extensive,psa_1,1.1,0.6
+16,RLB3,HWB14,complete,psa_1,1.7,0.6
+17,RLB4,HWB15,slight,psa_1,0.75,0.6
+18,RLB4,HWB15,moderate,psa_1,0.75,0.6
+19,RLB4,HWB15,extensive,psa_1,0.75,0.6
+20,RLB4,HWB15,complete,psa_1,1.1,0.6
+21,RLB5,HWB16,slight,psa_1,0.9,0.6
+22,RLB5,HWB16,moderate,psa_1,0.9,0.6
+23,RLB5,HWB16,extensive,psa_1,1.1,0.6
+24,RLB5,HWB16,complete,psa_1,1.5,0.6
+25,RLB6,HWB24,slight,psa_1,0.25,0.6
+26,RLB6,HWB24,moderate,psa_1,0.35,0.6
+27,RLB6,HWB24,extensive,psa_1,0.45,0.6
+28,RLB6,HWB24,complete,psa_1,0.7,0.6
+29,RLB7,HWB25,slight,psa_1,0.3,0.6
+30,RLB7,HWB25,moderate,psa_1,0.5,0.6
+31,RLB7,HWB25,extensive,psa_1,0.6,0.6
+32,RLB7,HWB25,complete,psa_1,0.9,0.6
+33,RLB8,HWB26,slight,psa_1,0.75,0.6
+34,RLB8,HWB26,moderate,psa_1,0.75,0.6
+35,RLB8,HWB26,extensive,psa_1,0.75,0.6
+36,RLB8,HWB26,complete,psa_1,1.1,0.6
+37,RLB9,HWB27,slight,psa_1,0.75,0.6
+38,RLB9,HWB27,moderate,psa_1,0.75,0.6
+39,RLB9,HWB27,extensive,psa_1,0.75,0.6
+40,RLB9,HWB27,complete,psa_1,1.1,0.6
+41,RLB10,HWB28,slight,psa_1,0.8,0.6
+42,RLB10,HWB28,moderate,psa_1,1,0.6
+43,RLB10,HWB28,extensive,psa_1,1.2,0.6
+44,RLB10,HWB28,complete,psa_1,1.7,0.6
+45,RLB1,HWB12,slight,pgd,3.9,0.2
+46,RLB1,HWB12,moderate,pgd,3.9,0.2
+47,RLB1,HWB12,extensive,pgd,3.9,0.2
+48,RLB1,HWB12,complete,pgd,13.8,0.2
+49,RLB2,HWB13,slight,pgd,3.9,0.2
+50,RLB2,HWB13,moderate,pgd,3.9,0.2
+51,RLB2,HWB13,extensive,pgd,3.9,0.2
+52,RLB2,HWB13,complete,pgd,13.8,0.2
+53,RLB3,HWB14,slight,pgd,3.9,0.2
+54,RLB3,HWB14,moderate,pgd,3.9,0.2
+55,RLB3,HWB14,extensive,pgd,3.9,0.2
+56,RLB3,HWB14,complete,pgd,13.8,0.2
+57,RLB4,HWB15,slight,pgd,3.9,0.2
+58,RLB4,HWB15,moderate,pgd,3.9,0.2
+59,RLB4,HWB15,extensive,pgd,3.9,0.2
+60,RLB4,HWB15,complete,pgd,13.8,0.2
+61,RLB5,HWB16,slight,pgd,3.9,0.2
+62,RLB5,HWB16,moderate,pgd,3.9,0.2
+63,RLB5,HWB16,extensive,pgd,3.9,0.2
+64,RLB5,HWB16,complete,pgd,13.8,0.2
+65,RLB6,HWB24,slight,pgd,3.9,0.2
+66,RLB6,HWB24,moderate,pgd,3.9,0.2
+67,RLB6,HWB24,extensive,pgd,3.9,0.2
+68,RLB6,HWB24,complete,pgd,13.8,0.2
+69,RLB7,HWB25,slight,pgd,3.9,0.2
+70,RLB7,HWB25,moderate,pgd,3.9,0.2
+71,RLB7,HWB25,extensive,pgd,3.9,0.2
+72,RLB7,HWB25,complete,pgd,13.8,0.2
+73,RLB8,HWB26,slight,pgd,3.9,0.2
+74,RLB8,HWB26,moderate,pgd,3.9,0.2
+75,RLB8,HWB26,extensive,pgd,3.9,0.2
+76,RLB8,HWB26,complete,pgd,13.8,0.2
+77,RLB9,HWB27,slight,pgd,3.9,0.2
+78,RLB9,HWB27,moderate,pgd,3.9,0.2
+79,RLB9,HWB27,extensive,pgd,3.9,0.2
+80,RLB9,HWB27,complete,pgd,13.8,0.2
+81,RLB10,HWB28,slight,pgd,3.9,0.2
+82,RLB10,HWB28,moderate,pgd,3.9,0.2
+83,RLB10,HWB28,extensive,pgd,3.9,0.2
+84,RLB10,HWB28,complete,pgd,13.8,0.2
+85,RTU1,NA,slight,pga,0.6,0.6
+86,RTU1,NA,moderate,pga,0.8,0.6
+87,RTU1,NA,slight,pgd,6,0.7
+88,RTU1,NA,moderate,pgd,12,0.5
+89,RTU1,NA,extensive,pgd,60,0.5
+90,RTU1,NA,complete,pgd,60,0.5
+91,RTU2,NA,slight,pga,0.5,0.6
+92,RTU2,NA,moderate,pga,0.7,0.6
+93,RTU2,NA,slight,pgd,0.6,0.7
+94,RTU2,NA,moderate,pgd,12,0.5
+95,RTU2,NA,extensive,pgd,60,0.5
+96,RTU2,NA,complete,pgd,60,0.5
+97,RFF,Facility with Anchored Components w/ Backup Power,slight,pga,0.23,0.5
+98,RFF,Facility with Anchored Components w/ Backup Power,moderate,pga,0.43,0.45
+99,RFF,Facility with Anchored Components w/ Backup Power,extensive,pga,0.64,0.6
+100,RFF,Facility with Anchored Components w/ Backup Power,complete,pga,1.1,0.6
+101,RFF,Facility with Anchored Components w/o Backup Power,slight,pga,0.12,0.55
+102,RFF,Facility with Anchored Components w/o Backup Power,moderate,pga,0.27,0.5
+103,RFF,Facility with Anchored Components w/o Backup Power,extensive,pga,0.64,0.6
+104,RFF,Facility with Anchored Components w/o Backup Power,complete,pga,1.1,0.6
+105,RFF,Facility with Unnchored Components w/ Backup Power,slight,pga,0.1,0.55
+106,RFF,Facility with Unnchored Components w/ Backup Power,moderate,pga,0.23,0.5
+107,RFF,Facility with Unnchored Components w/ Backup Power,extensive,pga,0.48,0.6
+108,RFF,Facility with Unnchored Components w/ Backup Power,complete,pga,0.8,0.6
+109,RFF,Facility with Unnchored Components w/o Backup Power,slight,pga,0.09,0.5
+110,RFF,Facility with Unnchored Components w/o Backup Power,moderate,pga,0.2,0.45
+111,RFF,Facility with Unnchored Components w/o Backup Power,extensive,pga,0.48,0.6
+112,RFF,Facility with Unnchored Components w/o Backup Power,complete,pga,0.8,0.6
+113,RFF,Fuel facility w/ buried tanks,slight,pgd,4,0.5
+114,RFF,Fuel facility w/ buried tanks,moderate,pgd,8,0.5
+115,RFF,Fuel facility w/ buried tanks,extensive,pgd,24,0.5
+116,RFF,Fuel facility w/ buried tanks,complete,pgd,24,0.5
+117,RDF,Facility with Anchored Components w/ Backup Power,slight,pga,0.15,0.75
+118,RDF,Facility with Anchored Components w/ Backup Power,moderate,pga,0.35,0.65
+119,RDF,Facility with Anchored Components w/ Backup Power,extensive,pga,0.8,0.8
+120,RDF,Facility with Anchored Components w/ Backup Power,complete,pga,1.5,0.8
+121,RDF,Facility with Anchored Components w/o Backup Power,slight,pga,0.12,0.5
+122,RDF,Facility with Anchored Components w/o Backup Power,moderate,pga,0.27,0.45
+123,RDF,Facility with Anchored Components w/o Backup Power,extensive,pga,0.8,0.8
+124,RDF,Facility with Anchored Components w/o Backup Power,complete,pga,1.5,0.8
+125,RDF,Facility with Unnchored Components w/ Backup Power,slight,pga,0.13,0.55
+126,RDF,Facility with Unnchored Components w/ Backup Power,moderate,pga,0.28,0.5
+127,RDF,Facility with Unnchored Components w/ Backup Power,extensive,pga,0.8,0.8
+128,RDF,Facility with Unnchored Components w/ Backup Power,complete,pga,1.5,0.8
+129,RDF,Facility with Unnchored Components w/o Backup Power,slight,pga,0.11,0.45
+130,RDF,Facility with Unnchored Components w/o Backup Power,moderate,pga,0.23,0.4
+131,RDF,Facility with Unnchored Components w/o Backup Power,extensive,pga,0.8,0.8
+132,RDF,Facility with Unnchored Components w/o Backup Power,complete,pga,1.5,0.8
