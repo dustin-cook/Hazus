@@ -1,4 +1,4 @@
-function [ loss ] = main_hazus_rail_track( lifeline_type, lifeline_class, pgd )
+function [ loss ] = main_hazus_rail_track( pgd )
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
 
@@ -11,21 +11,21 @@ function [ loss ] = main_hazus_rail_track( lifeline_type, lifeline_class, pgd )
 
 %% Initial Setup
 % Import packages
-import hazus.fn_calc_hazus_loss
+import hazus.fn_hazus_ds
+import hazus.fn_hazus_loss
 
 % Load data
 fragility_table = readtable(['+hazus' filesep 'data_hazus' filesep 'hazus_rail_fragility.csv']);
 consequence_table = readtable(['+hazus' filesep 'data_hazus' filesep 'hazus_rail_consequence.csv']);
 
-%% Define Building Fragility
-filt = strcmp(fragility_table.lifeline_class,lifeline_class);
+% Filter data
+filt = strcmp(fragility_table.lifeline_class,'RTR1');
 fragility_data = fragility_table(filt,:);
+consequence_data = consequence_table(strcmp(consequence_table.lifeline_type,'RTR'),:);
 
-%% Define Consequence
-consequence_data = consequence_table(strcmp(consequence_table.lifeline_type,lifeline_type),:);
-
-%% Define Building Loss
-[ loss ] = fn_calc_hazus_loss( fragility_data, consequence_data, pgd, 'mean_recovery_days' );
+%% Define Loss
+[ prob_ds ] = fn_hazus_ds( fragility_data, pgd );
+[ loss ] = fn_hazus_loss( prob_ds, consequence_data, 'mean_recovery_days' );
 
 end
 
