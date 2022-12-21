@@ -1,4 +1,4 @@
-function [ loss ] = main_hazus_rail( comp, n_sims )
+function [ loss ] = main_hazus_rail( comp )
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
 
@@ -13,6 +13,9 @@ function [ loss ] = main_hazus_rail( comp, n_sims )
 % Import packages
 import hazus.sim_hazus_ds
 import hazus.fn_hazus_loss
+
+% Define number of sims to run for combinding pga and pgd data
+n_sims = 10000;
 
 % Load and filter eq pga data
 if strcmp(comp.lifeline_type,'RST') % only for stations use equivalent pga data
@@ -43,7 +46,7 @@ end
 % Simulate ground failure occurances
 sim_liq = rand(n_sims, 1) < comp.p_liq; % Simulate which realizations have liquefaction
 sim_land = rand(n_sims, 1) < comp.p_land; % Simulate which realizations have landslide
-sim_rupt = rand(n_sims, 1); % Simulate extent of surface fault rupture deformations
+sim_rupt = rand(n_sims, 1); % Simulate extent of surface fault rupture deformations (assuming uniform dist from 0 to max sf_rup)
 
 % Damage from lateral spreading
 filt = strcmp(fragility_data.hazard,'lateral spread') | strcmp(fragility_data.hazard,'ground failure');
