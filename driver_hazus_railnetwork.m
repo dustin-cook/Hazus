@@ -40,6 +40,7 @@ function [] = asses_rail_comp(m, network_components, gm_sim, site_info, pga_idx)
     num_sims = gm_sim.n_scenarios;
     comp = table2struct(network_components(m,:));
     recovery_time_days = zeros(num_sims,1);
+    prob_ds = zeros(num_sims,4);
     
     % Pull site keys
     site_filt = site_info.locIdx == comp.locIdx;
@@ -71,7 +72,7 @@ function [] = asses_rail_comp(m, network_components, gm_sim, site_info, pga_idx)
             comp.p_land = gm_sim.imSims_combined.landslide_prob(k,site.locIdx);
 
             % Calc losses for each asset
-            [ recovery_time_days(k,1) ] = main_hazus_rail( comp );
+            [ recovery_time_days(k,1), prob_ds(k,:) ] = main_hazus_rail( comp );
         end
         
         % Save output data
@@ -79,7 +80,7 @@ function [] = asses_rail_comp(m, network_components, gm_sim, site_info, pga_idx)
         if ~exist(save_dir,'dir')
             mkdir(save_dir)
         end
-        save([save_dir filesep 'modelID_' num2str(m) '.mat'], 'recovery_time_days')
+        save([save_dir filesep 'modelID_' num2str(m) '.mat'], 'recovery_time_days', 'prob_ds')
     end
     
 end

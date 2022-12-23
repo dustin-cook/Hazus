@@ -1,4 +1,4 @@
-function [ loss ] = main_hazus_rail( comp )
+function [ loss, prob_ds ] = main_hazus_rail( comp )
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
 
